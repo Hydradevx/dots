@@ -1,4 +1,91 @@
+@import "colors.css";
+
+
+/* global */
 * {
-    font-family: "JetBrainsMono Nerd Font";
-    font-size: 13px;
+  font-family: "JetBrainsMono Nerd Font";
+  font-size: 13px;
+  border: none;
+  min-height: 0;
+}
+
+/* bar background */
+window#waybar {
+  background: transparent;
+}
+
+/* main container */
+#workspaces,
+#window,
+#cpu,
+#memory,
+#temperature,
+#network,
+#pulseaudio,
+#battery,
+#clock {
+  background: @background;
+  color: @foreground;
+  padding: 4px 10px;
+  border-radius: 999px;
+}
+
+/* spacing between modules */
+.modules-left > widget,
+.modules-center > widget,
+.modules-right > widget {
+  margin: 4px 4px;
+}
+
+/* workspaces */
+#workspaces {
+  padding: 4px;
+}
+
+#workspaces button {
+  background: transparent;
+  color: @foreground;
+  padding: 4px 10px;
+  margin: 0 2px;
+  border-radius: 999px;
+}
+
+#workspaces button.active {
+  background: @accent;
+  color: @background;
+}
+
+#workspaces button.urgent {
+  background: @error;
+  color: @background;
+}
+
+/* window title */
+#window {
+  padding-left: 14px;
+  padding-right: 14px;
+}
+
+/* icons emphasis */
+#cpu,
+#memory,
+#temperature,
+#network,
+#pulseaudio,
+#battery {
+  font-weight: 600;
+}
+
+/* battery states */
+#battery.warning {
+  color: @warning;
+}
+
+#battery.critical {
+  color: @error;
+}
+
+/* clock */
+#clock {
+  font-weight: 700;
 }
