@@ -1,3 +1,7 @@
+gc.sh
+README.md
+rice-stack.md
+install/
 .config/cava/themes/hydra
 .config/gtk-3.0/colors.css
 .config/hypr/colors.conf

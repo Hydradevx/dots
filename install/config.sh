@@ -1,0 +1,59 @@
+#!/bin/bash
+
+# -- Configuration --
+export LOG_FILE="$HOME/rice_install.log"
+export DOTFILES_REPO="https://github.com/Hydradevx/dotfiles.git"
+export DOTFILES_DIR="$HOME/dotfiles"
+export BACKUP_DIR="$HOME/dotfiles_backup_$(date +%Y%m%d_%H%M%S)"
+
+# Package lists
+export HYPR_DEPS=(
+    hyprland
+    xdg-desktop-portal-hyprland
+    waybar
+    rofi
+    kitty
+    swww
+    swaync
+    hyprlock
+    hypridle
+    sddm
+    starship
+    qt5ct
+    neovim
+    grim
+    slurp
+    swappy
+)
+
+export RICE_DEPS=(
+    papirus-icon-theme
+    ttf-jetbrains-mono
+    ttf-nerd-fonts-symbols
+    ttf-font-awesome
+    noto-fonts
+    noto-fonts-emoji
+    stow
+    python
+)
+
+export AUR_DEPS=(
+    python-pywalfox
+    vesktop
+    visual-studio-code-bin
+    matugen-bin
+    wlogout
+    fastfetch
+    arc-gtk-theme
+    maplemono-nf
+    spotify
+    spicetify-cli
+    obs-studio
+)
+
+# Colors for output
+export RED='\033[0;31m'
+export GREEN='\033[0;32m'
+export YELLOW='\033[1;33m'
+export BLUE='\033[0;34m'
+export NC='\033[0m' # No Color

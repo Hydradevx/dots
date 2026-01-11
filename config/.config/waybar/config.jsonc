@@ -1,39 +1,50 @@
+/* ---- 💫 https://github.com/JaKooLit 💫 ---- */
+
+/* My Mostly Used waybar config incase you wonder :) */
 {
-  "layer": "top",
-  "position": "top",
-  "height": 34,
-  "spacing": 6,
-  "fixed-center": true,
-
-  "modules-left": [
-    "hyprland/workspaces"
+"include": [
+  "$HOME/.config/waybar/Modules",
+  "$HOME/.config/waybar/ModulesWorkspaces",
+  "$HOME/.config/waybar/ModulesCustom",
+  "$HOME/.config/waybar/ModulesGroups",
+  "$HOME/.config/waybar/UserModules",
   ],
+"layer": "bottom",
+//"mode": "dock",
+"exclusive": true,
+"passthrough": false,
+"position": "top",
+"spacing": 3,
+"fixed-center": true,
+"ipc": true,
+"margin-top": 3,
+"margin-left": 8,
+"margin-right": 8,
 
-  "modules-center": [
-    "hyprland/window"
-  ],
+"modules-left": [
+	"idle_inhibitor",
+	"custom/separator#blank",
+	"clock#2",
+	"custom/separator#blank",
+	"custom/cava",
+	"custom/separator#blank",
+	"tray",
+	],
 
-  "modules-right": [
-    "cpu",
-    "memory",
-    "temperature",
-    "network",
-    "pulseaudio",
-    "battery",
-    "clock"
-  ],
+"modules-center": [
+	"hyprland/workspaces#kanji",
+	],
 
-  "hyprland/workspaces": {
-    "disable-scroll": true,
-    "all-outputs": true
-  },
-
-  "hyprland/window": {
-    "max-length": 60,
-    "separate-outputs": true
-  },
-
-  "clock": {
-    "format": "  %H:%M  %d %b"
-  }
+"modules-right": [
+  "group/notify",	
+	"cpu",
+	"custom/separator#blank",  
+	"disk",
+	"custom/separator#blank",  
+	"memory",
+	"custom/separator#blank",  
+	"network",
+	"custom/separator#blank",
+	"custom/power"
+	],
 }
