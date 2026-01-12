@@ -26,13 +26,11 @@
 	"custom/separator#blank",
 	"clock#2",
 	"custom/separator#blank",
-	"custom/cava",
-	"custom/separator#blank",
 	"tray",
 	],
 
 "modules-center": [
-	"hyprland/workspaces#kanji",
+	"hyprland/workspaces#rw",
 	],
 
 "modules-right": [

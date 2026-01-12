@@ -37,6 +37,14 @@ export RICE_DEPS=(
     python
 )
 
+export FONT_DEPS=(
+    ttf-jetbrains-mono
+    ttf-nerd-fonts-symbols
+    ttf-font-awesome
+    noto-fonts
+    noto-fonts-emoji
+)
+
 export AUR_DEPS=(
     python-pywalfox
     vesktop

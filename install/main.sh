@@ -17,7 +17,7 @@ main() {
     source 4_install_yay.sh
     source 5_install_rice_deps.sh
     source 3_install_fonts.sh
-    source 6_clone_and_stow.sh
+    # source 6_clone_and_stow.sh
     
     # Final messages
     log_success "Installation complete!"
